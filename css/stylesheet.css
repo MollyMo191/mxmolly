@@ -1,0 +1,839 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #081B23;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* NAVIGATION BAR */
+
+.Sidebar_Container{
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 0 1vw black;
+    background-color: #081B23;
+}
+
+.sociallinks{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-left: 90vw;
+    height: 100%;
+    opacity: 30%;
+}
+
+.sociallinks img{
+    position: relative;
+    float: right;
+    height: 3.25vh;
+    margin-left: 2vw;
+}
+
+
+.PageLogo{
+    z-index: 100;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PageLogo img{
+    width: auto;
+    height: 11.5vh;
+}
+
+.menu{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    font-weight: 300;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    height: 100%;
+    width: 43vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    letter-spacing: 0.2vw;
+    padding-left: 3vw;
+    float: left;
+}
+
+.menu div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: left;
+    margin-right: 3vw;
+}
+
+.aboutposition{
+    margin-left: 20vw !important;
+}
+
+.hover-underline-animation{
+    position: relative;
+}
+
+.hover-underline-animation:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.hover-underline-animation:hover:before{
+    visibility: visible;
+    width: 100%;
+}
+
+.Sidebar_Container a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.Sidebar_Container a:visited{
+    color: white;
+}
+
+.Sidebar_Container a:hover{
+    text-decoration: none;
+}
+
+#CurrentPage{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+
+/* LANDING PAGE */
+
+.LandingPage{
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    animation: fadein ease-in 0.75s;
+    overflow: hidden;
+    background-image: linear-gradient(#142a35, #081B23);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.positioningbox{
+    text-align: center;
+    line-height: 0;
+}
+
+.positioningbox img{
+    position: relative;
+    height: 15vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+.smalltext{
+    font-size: 1.75vh;
+    letter-spacing: 0.25vw;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.largetext{
+    font-size: 5vh;
+    font-weight: 400;
+}
+
+#largetext{
+    font-size: 5vh;
+    font-weight: 400;
+    line-height: 10vh;
+}
+
+.LandingPage a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.LandingPage a:visited{
+    color: white;
+}
+
+.LandingPage a:hover{
+    text-decoration: none;
+    line-height: 5vh;
+}
+
+.hover-underline-animation_landing{
+    position: relative;
+}
+
+.hover-underline-animation_landing:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    
+}
+
+.hover-underline-animation_landing:hover:before{
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+/* BRANDING AND CAMPAIGNS */
+
+.Image_Gallery_BC{
+    height: 85vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow: hidden;
+    background-color: white;
+}
+
+@keyframes fadein{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.box_BC{
+    height: 100%;
+    width: 25vw;
+    margin-right: 0.25vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 0.25vw;
+}
+
+#bottom_row{
+    margin-bottom: 0;
+}
+
+.box_BC img{
+    height: 90vh;
+    width: auto;
+    flex-shrink: 0;
+}
+
+
+
+/* DESIGN HOME PAGE */
+
+.Image_Gallery{
+    height: 85vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow: hidden;
+    background-color: white;
+}
+
+@keyframes fadein{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.row {
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    overflow: hidden;
+}
+
+#box_category_design{
+    height: 50vh;
+    width: 21.15vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 0.25vw;
+    height: 85vh;
+    width: 33.3vw;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+#box_category_design img{
+    max-height: 150%;
+}
+
+.middlebox_design{
+    margin-left: 0.25vw;
+    margin-right: 0.25vw;
+    height: 50vh;
+    width: 21.15vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 0.25vw;
+    height: 85vh;
+    width: 33.3vw;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+
+
+
+
+#box_category_PM{
+    height: 50vh;
+    width: 21.15vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 0.25vw;
+    height: 85vh;
+    width: 33.3vw;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.middlebox_PM img{
+    max-height: 200%;
+}
+
+#box_category_PM img{
+    max-height: 200%;
+}
+
+.middlebox_PM{
+    margin-left: 0.25vw;
+    margin-right: 0.25vw;
+    height: 50vh;
+    width: 21.15vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 0.25vw;
+    height: 85vh;
+    width: 33.3vw;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* ILLUSTRATION PAGE */
+
+.Image_Gallery_Illustration{
+    height: 85vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+@keyframes fadein{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.row {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.box{
+    height: 50vh;
+    width: 25vw;
+    margin-right: 0.25vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 0.25vw;
+}
+
+.box_wide{
+    height: 50vh;
+    width: 25vw;
+    margin-right: 0.25vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 0.25vw;
+}
+
+#bottom_row{
+    margin-bottom: 0;
+}
+
+.box img{
+    height: auto;
+    width: 110%;
+    flex-shrink: 0;
+}
+
+.box_wide img{
+    height: 110%;
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* HOVER OVERLAY */
+
+.image__overlay {
+	position: absolute;
+	top: 0;
+    left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff00;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 100;
+	transition: opacity 0.25s;
+    backdrop-filter: grayscale(100%);
+}
+
+.image__overlay--primary {
+	background: #0000004b;
+}
+
+.image__overlay>* {
+	transform: translateY(10px);
+	transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+	opacity: 1;
+    backdrop-filter: blur(3px) grayscale(0%);
+    color: white;
+    transition: all 0.25s ease;
+}
+
+.image__overlay:hover>* {
+	transform: translateY(0);
+}
+
+.image__title {
+	font-size: 1.25vw;
+	font-weight: 500;
+}
+
+.image__description {
+	font-size: 0.75vw;
+	margin-top: 0.25em;
+}
+
+
+
+
+/* CONTENT BOXES */
+
+.Image_Gallery_Content_Page{
+    height: auto;
+    width: 100vw;
+    position: relative;
+    z-index: 3;
+    animation: fadein ease-in 0.75s;
+    overflow: hidden;
+    background-color: white;
+}
+
+@keyframes fadein{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.box_page{
+    height: 50vh;
+    width: 31.5vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 0.25vw;
+    margin-bottom: 0.25vw;
+}
+
+#bottom_row{
+    margin-bottom: 0;
+}
+
+.box_page img{
+    height: fill;
+    width: auto;
+    flex-shrink: 0;
+}
+
+
+/* ABOUT   EFD8BD  */
+
+.Image_Gallery_About{
+    height: 83vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    padding-top: 17vh;
+    animation: fadein ease-in 0.75s;
+    overflow-y: hidden;
+    background-image: linear-gradient(to right, #e3e3e3, white);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.box_page_about{
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: left;
+    padding-left: 8vw;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box_page_about img{
+    height: 85vh;
+    width: auto;
+}
+
+.Sidebar_Container_About{
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.249);
+    background-color: #081B23;
+}
+
+.Sidebar_Container_About a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.Sidebar_Container_About a:visited{
+    color: white;
+}
+
+.Sidebar_Container_About a:hover{
+    text-decoration: none;
+}
+
+.project_description_box_about{
+    position: absolute;
+    float: left;
+    height: 50vh;
+    width: 65vh;
+    margin-left: 58vw;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+
+.smalltext_about{
+    font-size: 1.5vh;
+    letter-spacing: 0.25vw;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 0;
+}
+
+.largetext_about{
+    font-size: 4.5vh;
+    font-weight: 500;
+    line-height: 0;
+    margin-top: 4.25vh;
+}
+
+.description_about{
+    font-size: 1.8vh;
+    font-weight: 300;
+}
+
+
+
+/* PROJECT PAGE */
+
+.Image_Gallery_ProjectPage{
+    height: 120vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.projectpage_image{
+    height: 90%;
+    width: 60vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectpage_image img{
+    height: 100%;
+    width: auto;
+}
+
+
+
+
+.Image_Gallery_ProjectPage_Wide{
+    height: 85vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.projectpage_image_wide{
+    height: 100%;
+    width: 60vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectpage_image_wide img{
+    height: 90%;
+    width: auto;
+}
+
+.projectpage_image_LONG{
+    height: 95%;
+    width: 60vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectpage_image_LONG img{
+    height: 100%;
+    width: auto;
+}
+
+
+.Image_Gallery_ProjectPage_MPZ{
+    height: 480vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.Image_Gallery_ProjectPage_Opia{
+    height: 280vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.Image_Gallery_ProjectPage_PB{
+    height: 405vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.Image_Gallery_ProjectPage_ND{
+    height: 250vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.Image_Gallery_ProjectPage_FRA{
+    height: 210vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.Image_Gallery_ProjectPage_BB{
+    height: 280vh;
+    width: 101vw;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15vh;
+    animation: fadein ease-in 0.75s;
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project_description_container{
+    position: absolute;
+    float: left;
+    height: 85vh;
+    width: 63vh;
+    margin-left: 63vw;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.project_description_box{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.smalltext_project{
+    font-size: 1.5vh;
+    letter-spacing: 0.25vw;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 0;
+}
+
+.largetext_project{
+    font-size: 4.5vh;
+    font-weight: 500;
+    line-height: 0;
+    margin-top: 4.25vh;
+}
+
+.description_project{
+    font-size: 1.8vh;
+    font-weight: 300;
+}
