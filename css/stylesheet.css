@@ -558,7 +558,7 @@ html{
 
 .box_page_about{
     height: 100%;
-    width: 100vw;
+    width: 50vw;
     position: relative;
     bottom: 0;
     display: flex;
@@ -595,6 +595,19 @@ html{
     text-decoration: none;
 }
 
+
+
+.description_about a:link{
+    color: #a9b100;
+}
+
+.description_about a:visited{
+    color: #727800;
+}
+
+.description_about a:hover{
+    color: #ced900;
+}
 .project_description_box_about{
     position: absolute;
     float: left;
